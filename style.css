@@ -1,0 +1,145 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;  
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #1a1a1a;  
+    color: #f0f0f0;  
+}
+
+ 
+.container {
+    display: flex;
+    width: 100%;
+}
+
+ 
+.left-empty {
+    flex: 1;
+    background-color: #2e2e2e;  
+}
+
+ 
+.right-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px;
+    gap: 30px;
+}
+
+ 
+.widget {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+ 
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.tab-btn {
+    background-color: #555;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color:  #b9bebe;  
+}
+
+.tab-btn:hover {
+    background-color:  #b9bebe;
+}
+
+ 
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+ 
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.add-image {
+    background-color:  #b9bebe;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-image:hover {
+    background-color:  #b9bebe;
+}
+
+.gallery-images {
+    display: flex;
+    gap: 15px;
+}
+
+.gallery-item {
+    width: 120px;
+    height: 120px;
+    background-color: #666;
+    border-radius: 15px;
+    overflow: hidden;
+    background-size: cover;  
+    background-position: center;  
+}
+
+.gallery-controls {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-prev, .gallery-next {
+    background-color: #b9bebe;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-prev:hover, .gallery-next:hover {
+    background-color: #b9bebe;
+}
+
+ 
+@media (max-width: 768px) {
+    .right-content {
+        width: 100%;
+    }
+
+    .left-empty {
+        display: none;
+    }
+}
